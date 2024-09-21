@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     fontFamily: {
       'raleway': ["Raleway", 'sans-serif', 'system-ui'],
-      'serif': ['ui-serif', "Inter", 'sans-serif'],
+      'inter': ['ui-serif', "Inter", 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/images/banner.png')",
+      }
+    },
   },
   plugins: [
     require('daisyui')

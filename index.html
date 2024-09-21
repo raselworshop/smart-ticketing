@@ -14,12 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyui cdn for live link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main css file -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- tailwind cdn for live link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body>
 <header class="my-4 mx-auto max-w-sm md:max-w-screen-xl font-raleway">
     <!-- header section start -->
-    <section class="flex justify-between items-center">
+    <section class="flex justify-between items-center mb-12">
         <div>
             <h1 class="font-raleway font-bold text-2xl md:text-5xl"><span class="text-lime-500">P-</span>Ticket</h1>
         </div>
@@ -31,11 +48,11 @@
                 <li><a href="#search">Search</a></li>
             </ul>
         </div>
-        <div class="hidden md:block">
-            <button class="btn btn-lg text-lime-500 border-lime-500 bg-green-100 text-3xl items-center">Bus <img class="w-8 items-center flex-1" src="images/bus-icon.png" alt="Bus"></button>
+        <div class="pl-24 md:pl-0">
+            <button class="btn btn-md md:btn-lg text-lime-500 border-lime-500 bg-green-100 text-xl md:text-3xl items-center">Bus <img class="w-6 md:w-8 items-center flex-1" src="images/bus-icon.png" alt="Bus"></button>
         </div>
         <div class="md:hidden">
-            <div class="dropdown relative">
+            <div class="dropdown bg-lime-500 rounded-lg relative">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                 <i class="fa-solid fa-bars"></i>
                 </div>
@@ -51,7 +68,7 @@
         </div>
     </section>
     <!-- carousel/banner section start -->
-    <section id="home" class="md:relative max-w-sm md:max-w-screen-xl md:my-12">
+    <section id="home" class="md:relative max-w-sm md:max-w-screen-xl my-8 md:my-12">
         <div class="flex flex-col justify-center items-center" style="background-image: url('/images/banner.png'); 
         background-size: cover; 
         background-repeat: no-repeat;
@@ -66,7 +83,7 @@
          </div> 
         </div>
         <!-- stat/customers things -->
-        <div class="md:absolute -bottom-16 left-56 md:flex justify-evenly items-center gap-16 space-y-4">
+        <div class="md:absolute -bottom-20 left-56 z-10 md:flex justify-center items-center gap-16 space-y-4">
             <!-- card one -->
             <div class="md:w-max flex justify-between gap-4 rounded-3xl border-b-2 border-green-500 bg-white p-6">
                 <img src="./images/people.png" alt="men">

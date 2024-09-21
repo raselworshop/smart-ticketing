@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="my-4 mx-auto max-w-sm md:max-w-screen-xl font-raleway">
+    <section class="flex justify-between items-center">
+        <div>
+            <h1 class="font-raleway font-bold text-2xl md:text-5xl"><span class="text-lime-500">P-</span>Ticket</h1>
+        </div>
+        <div class="hidden md:block">
+            <ul class="flex justify-between items-center gap-10 font-raleway text-xl">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#search">Search</a></li>
+            </ul>
+        </div>
+        <div class="hidden md:block">
+            <button class="btn btn-lg text-lime-500 border-lime-500 bg-green-100 text-3xl items-center">Bus <img class="w-8 items-center flex-1" src="images/bus-icon.png" alt="Bus"></button>
+        </div>
+        <div class="md:hidden">
+            <div class="dropdown relative">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-8 top-2">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#destinations">Destinations</a></li>
+                  <li><a href="#search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
+<main></main>
+<footer></footer>
+</body>
+</html>

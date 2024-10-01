@@ -352,7 +352,8 @@
                             </p>
                         </div>
                         <div class="border-b-2 border-dashed my-4"></div>
-                        <div class="flex items-center gap-2 border-y-2 p-2 my-2 border-dashed text-lg font-semibold justify-between">
+                        <div id="show-coupon-price"
+                            class="flex items-center gap-2 border-y-2 p-2 my-2 border-dashed text-lg font-semibold justify-between">
                             <input id="coupon-field" class="input my-5 w-full input-primary border-primary" type="text"  placeholder="Have a coupon?" disabled>
                             <button id="coupon-btn" class="btn bg-lime-500 hover:text-black text-white" disabled>Apply</button>
                         </div>
@@ -376,7 +377,7 @@
                             <div class="label">
                               <span class="label-text font-bold text-base">Phone Number*</span>
                             </div>
-                            <input type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
+                            <input id="phone-number" type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
                         </label>
                         <label class="form-control w-full my-3">
                             <div class="label">
@@ -384,7 +385,7 @@
                             </div>
                             <input type="text" placeholder="Enter Email Address" class="input input-bordered w-full" />
                         </label>
-                        <button onclick="my_modal_1. showModal()" class="btn bg-lime-500 mt-5 text-xl text-white uppercase w-full">Next</button>
+                        <button id="next-btn" onclick="my_modal_1. showModal()" class="btn bg-lime-500 mt-5 text-xl text-white uppercase w-full" disabled>Next</button>
                         <dialog id="my_modal_1" class="modal">
                             <form method="dialog" 
                                 class="modal-box px-5 py-10 flex flex-col justify-center items-center">
@@ -398,7 +399,8 @@
                              </div>
                              <p class="my-2">Shortly you will find a confirmation in your email.</p>
                              <div class="modal-action">
-                                 <button class="btn bg-lime-500 text-2xl px-10 rounded-full text-center hover:text-black text-white">Continue</button>
+                                 <button id="continue-btn" 
+                                    class="btn bg-lime-500 text-2xl px-10 rounded-full text-center hover:text-black text-white">Continue</button>
                              </div>
                             </form>
                         </dialog>

@@ -100,7 +100,15 @@ phoneNumberEl.addEventListener('input', function(e){
     console.log(inputPNUmberValue)
     if(inputPNUmberValue.length >= 11){
         nextBtnEl.removeAttribute("disabled")
+    }else{
+        nextBtnEl.setAttribute('disabled', true)
     }
+    
+    // if(inputPNUmberValue.length === 11){  // we can use here >= 11, but BD phone is almost 11 digits
+    //     nextBtnEl.disabled = false;
+    // }else{
+    //     nextBtnEl.disabled = true
+    // }
 })
 
 document.getElementById('continue-btn').addEventListener('click', function(){
